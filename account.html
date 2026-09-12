@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+   <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/account.css" />
+    <link rel="stylesheet" href="../CSS/phone-view.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- phone header -->
+    <div class="phone-header">
+      <div class="phone-logo-container">
+        <img src="image/logo2.jpg" alt="LOGO" />
+        <p>Louis Scent</p>
+      </div>
+
+      <div class="shop-icon">
+        <input type="text" placeholder="Search" />
+        <input type="checkbox" id="navbar-check" />
+        <label class="fa fa-bars" id="open-navbar" for="navbar-check"></label>
+        <label id="overlay" for="navbar-check"></label>
+        <div class="navbar-container">
+          <label
+            class="fa fa-xmark"
+            id="close-navbar"
+            for="navbar-check"
+          ></label>
+          <a href="index.html" class="navbar-btn active">Home</a>
+          <a href="about.html" class="navbar-btn">About</a>
+          <a href="contact.html" class="navbar-btn">Contact</a>
+          <a href="#" class="navbar-btn">Account</a>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <div class="header">
+      <div class="logo-container">
+        <img src="image/logo2.jpg" alt="LOGO" />
+        <p>Louis Scent</p>
+      </div>
+      <div class="header-btn-container">
+        <a href="index.html" class="btn">Home</a>
+        <a href="about.html" class="btn">About</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="account.html" class="btn active">Account</a>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- login page start -->
+     <div class="login-container" data-aos="fade-up"
+     data-aos-duration="1000">
+      <div class="login-items">
+        <h1>login</h1>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="Password">
+        <div class="login-items-group">
+          <a href="#">forget password</a>
+          <a href="register.html">register now!</a>
+        </div>
+        <button>login</button>
+      </div>
+     </div>
+     <!-- login page end -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>

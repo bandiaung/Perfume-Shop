@@ -4,259 +4,288 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ban's scent</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/phone-view.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
+    <!-- phone header -->
+    <div class="phone-header">
+      <div class="phone-logo-container">
+        <img src="image/logo2.jpg" alt="LOGO" />
+        <p>Louis Scent</p>
+      </div>
+
+      <div class="shop-icon">
+        <input type="text" placeholder="Search" />
+        <a href="shop.html" class="fa fa-shop" id="shop"></a>
+        <input type="checkbox" id="navbar-check" />
+        <label class="fa fa-bars" id="open-navbar" for="navbar-check"></label>
+        <label id="overlay" for="navbar-check"></label>
+        <div class="navbar-container">
+          <label
+            class="fa fa-xmark"
+            id="close-navbar"
+            for="navbar-check"
+          ></label>
+          <a href="#home" class="navbar-btn active">Home</a>
+          <a href="about.html" class="navbar-btn">About</a>
+          <a href="contact.html" class="navbar-btn">Contact</a>
+          <a href="account.html" class="navbar-btn">Account</a>
+        </div>
+      </div>
+    </div>
+    <!-- phone header end -->
+
+    <!-- header -->
     <div class="header">
       <div class="logo-container">
-        <img src="../perfume/perfume-logo.jpg" alt="LOGO" />
+        <img src="image/logo2.jpg" alt="LOGO" />
         <p>Louis Scent</p>
       </div>
       <div class="header-btn-container">
-        <a href="#home" class="btn">Home</a>
-        <a href="#about" class="btn">About</a>
-        <a href="#contact" class="btn">Contact</a>
-        <a href="#" class="btn">Account</a>
+        <a href="index.html" class="btn active">Home</a>
+        <a href="about.html" class="btn">About</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="account.html" class="btn"> Account </a>
+      </div>
+      <div class="shop-icon">
+        <input type="text" placeholder="Search" />
+        <a href="shop.html" class="fa fa-shop" id="shop"></a>
+        <p class="add-to-cart">0</p>
       </div>
     </div>
-    <div id="home" class="main-container">
-      <div class="home-page-wrapper">
-        <div class="home-page-about">
-          <h1>Mont Blac Explorer</h1>
-          <h2>Start you perfect day with the perfume</h2>
-          <p>
-            hi my name is jang ma ban di aung and i am selling fragrance to you
-            which will make
-          </p>
-          <div class="home-page-about-button">
-            <button class="order-now">Oder Now</button>
-            <button class="contact-us">Contact Us</button>
+    <!-- header end -->
+
+    <!-- Best seller page -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div data-aos="fade-up"
+     data-aos-duration="2000" id="home" class="main-container">
+            <div class="home-page-wrapper">
+              <div class="home-page-img">
+                <img src="image/best-seller1.png" />
+              </div>
+
+              <div class="home-page-about">
+                <h1>Mont Blac Explorer</h1>
+                <h2>Start you perfect day with the perfume</h2>
+                <p>
+                  hi my name is jang ma ban di aung and i am selling fragrance
+                  to you which will make
+                </p>
+                <div class="home-page-about-button">
+                  <button class="order-now">Oder Now</button>
+                  <button class="contact-us">Contact Us</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="home-page-img">
-          <img src="../perfume/homepage-img.png" />
+
+        <div class="swiper-slide">
+          <div id="home" class="main-container">
+            <div class="home-page-wrapper">
+              <div class="home-page-img">
+                <img src="image/best-seller2.png" />
+              </div>
+
+              <div class="home-page-about">
+                <h1>Mont Blac Explorer</h1>
+                <h2>Start you perfect day with the perfume</h2>
+                <p>
+                  hi my name is jang ma ban di aung and i am selling fragrance
+                  to you which will make
+                </p>
+                <div class="home-page-about-button">
+                  <button class="order-now">Oder Now</button>
+                  <button class="contact-us">Contact Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="home" class="main-container">
+            <div class="home-page-wrapper">
+              <div class="home-page-img">
+                <img src="image/best-seller3.png" />
+              </div>
+
+              <div class="home-page-about">
+                <h1>Mont Blac Explorer</h1>
+                <h2>Start you perfect day with the perfume</h2>
+                <p>
+                  hi my name is jang ma ban di aung and i am selling fragrance
+                  to you which will make
+                </p>
+                <div class="home-page-about-button">
+                  <button class="order-now">Oder Now</button>
+                  <button class="contact-us">Contact Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="swiper-pagination" id="dot-swiper"></div>
     </div>
+
+    <!-- best seller page end -->
 
     <!-- item availible page-->
-    <div class="item-container">
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="item-img">
-          <img src="../perfume/item-1.png" />
-        </div>
-        <div class="item-about">
-          <h2>laidga afdskfas</h2>
-          <button>About</button>
-          <button>Buy</button>
-        </div>
-      </div>
+    <div class="availible-item-title">
+      <h1>availible items</h1>
+      <p>you can order this and we can send you immediately</p>
+    </div>
+    <div class="item-container"></div>
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="thankyou-container">
+      <h1 class="thankyou-letter">"Thank You For You Attention"</h1>
     </div>
 
-    <!-- About Page -->
+    <!-- footer -->
 
-    <div id="about" class="main-about-container">
-      <div class="about-img-container">
-        <img src="../perfume/about-img.jpg" alt="Shop Photo" />
-      </div>
-      <div class="about-text-container">
-        <h1>About Us</h1>
+    <div class="footer-container">
+      <div class="footer-item-contact">
+        <h1>Contact</h1>
+
         <p>
-          this is our small shop and we want to make it big in the nearest
-          future, in this small shop you can test every fragrance as much as you
-          like, you can skin test, paper test, you can wear it if you wish to.
-          This is all about our shop.
+          <i class="fa fa-caret-right" id="caret"></i>
+          louis.scent@gmail.com
         </p>
-        <div class="social-btn">
-          <img class="insta" src="../perfume/instagram (2).png" />
-          <img class="tele" src="../perfume/telegram.png" />
-          <img class="twit" src="../perfume/twitter.png" />
+        <br />
+
+        <p>
+          <i class="fa fa-caret-right" id="caret"></i>
+          Phone: +9597893456 / +9594436346
+        </p>
+        <br />
+
+        <p>
+          <i class="fa fa-caret-right" id="caret"></i>
+          Location: London / Myanmar
+        </p>
+        <br />
+      </div>
+
+      <div class="footer-item-faq">
+        <h1>FAQ</h1>
+        <div class="faq-item">
+          <p><i class="fa fa-caret-right" id="caret"></i>Daily Use Perfume?</p>
+          <div class="answer1">
+            <p>
+              1. Bleu de Chanel EDP<br />
+              2. Dior Sauvage<br />
+              3. YSL Y EDP
+            </p>
+          </div>
+          <br />
+        </div>
+        <div class="faq-item">
+          <p>
+            <i class="fa fa-caret-right" id="caret"></i>What is the best perfume
+            for Date Night?
+          </p>
+          <div class="answer2">
+            <p>
+              1. YSL La Nuit de L'Homme<br />
+              2. Dior Sauvage Elixir<br />
+              3. JPG Le Male Le Parfum
+            </p>
+          </div>
+          <br />
+        </div>
+
+        <div class="faq-item">
+          <p><i class="fa fa-caret-right" id="caret"></i>Student?</p>
+          <div class="answer3">
+            <p>
+              1. Nautica Voyage<br />
+              2. Versace Pour Homme<br />
+              3. Afnan 9AM
+            </p>
+          </div>
+          <br />
+        </div>
+        <div class="faq-item">
+          <p>
+            <i class="fa fa-caret-right" id="caret"></i>Best type of perfume for
+            GYM Rat
+          </p>
+
+          <div class="answer4">
+            <p>
+              1. Nautica Voyage<br />
+              2. Versace Pour Homme<br />
+              3. Davidoff Cool Water<br />
+            </p>
+          </div>
+          <br />
+        </div>
+      </div>
+
+      <div class="footer-item-legal">
+        <h1>Legal</h1>
+        <p><i class="fa fa-caret-right" id="caret"></i>Terms and Conditions</p>
+        <br />
+        <p><i class="fa fa-caret-right" id="caret"></i>Privacy and Policy</p>
+        <br />
+      </div>
+
+      <div class="footer-item-social-media">
+        <h1>Social Media</h1>
+        <div class="footer-item-social-media-link">
+          <p class="fab fa-facebook"></p>
+          <p class="fab fa-instagram"></p>
+          <p class="fab fa-twitter"></p>
+          <p class="fab fa-telegram"></p>
+          <p class="fab fa-youtube"></p>
         </div>
       </div>
     </div>
-
-    <!-- contact page -->
-
-    <div class="contact-container" id="contact">
-      <div class="contact-wrapper">
-        <div class="contact-us-container">
-          <h1>Contact Us</h1>
-        </div>
-        <div class="contect-unlimited-scroll-container">
-          <div class="contact">HTML</div>
-          <div class="contact">CSS</div>
-          <div class="contact">JavaScript</div>
-          <div class="contact">Node.js</div>
-          <div class="contact">React.js</div>
-          <div class="contact">Phython</div>
-          <div class="contact">PHP</div>
-          <div class="contact">Django</div>
-          
-         
-        </div>
-        <div class="contact-list-container">
-          <p class="get-in-touch">GET IN TOUCH</p>
-          <div class="contact-list">
-            <ul class="social-icon">
-              <li class>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="#">Email: louis.scent@gamil.com</a>
-              </li>
-              <li class>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="#">Ph: +9578940372</a>
-              </li>
-              <li class>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="#">adress: London</a>
-              </li>
-            </ul>
-
-            <div class="about-developer">
-              <h3>Louis Dee</h3>
-              <h4>Software Engineer&Educator</h4>
-              <p>HTML CSS JavaScript & +40 Production of Web Design</p>
-            </div>
-          </div>
-
-          <div class="link-container">
-            <div class="link">
-              <img class="tele" src="../perfume/telegram.png" />
-              <img class="snap" src="../perfume/snapchat.png" />
-              <img class="insta" src="../perfume/instagram (2).png" />
-              <img class="twit" src="../perfume/twitter.png" />
-              <img class="youtube" src="../perfume/youtube.png" />
-              <img class="face" src="../perfume/communication.png" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="crd">
+      <p>item@from.London . Myanmar</p>
     </div>
-    <script></script>
+    <script type="module" src="../JavaScript/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+         autoplay: {
+          delay: 2000,
+        },
+        loop:true,
+        
+      });
+    </script>
+    <!-- initialize aos -->
+     <script>
+  AOS.init();
+</script>
   </body>
 </html>

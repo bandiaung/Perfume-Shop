@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/shop.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1d4533;
+      
+        background-repeat: no-repeat;
+        height:100vh;
+      }
+
+      .card-item-container {
+        border: 1px solid #fff;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        width: 650px;
+        margin: 50px auto;
+        padding: 40px;
+        height: fit-content;
+        border-radius: 30px;
+
+
+         background: linear-gradient(135deg, #1d4533, lightgreen, #1d4533);
+        height: 100%;
+        height:fit-content;
+      }
+      .card-item-about {
+        color: white;
+      }
+
+      .img-container {
+        width: 100px;
+        height: 80px;
+      }
+      .img-container img {
+        width: 100%;
+        object-fit: cover;
+        margin-left: 25px;
+        margin-top: 18px;
+      }
+      .mfc-btn {
+        width: 130px;
+        height: 40px;
+        background-color: red;
+        border: none;
+        border-radius: 20px;
+        text-transform: capitalize;
+        color: white;
+        transition: 0.3s;
+      }
+      .mfc-btn:hover {
+        box-shadow: 0 0 20px red;
+        transform: translateY(-3px);
+      }
+      .deli-btn {
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        color: none;
+        border: none;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+      .deli-btn:hover {
+        box-shadow: 0 0 20px white;
+        transform: translateY(-3px);
+      }
+      .price-container {
+        display: flex;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header html -->
+    <div class="header-container">
+      <div class="header">
+        <div class="logo-container">
+          <img src="image/logo2.jpg" />
+          <a href="index.html">louis scent</a>
+        </div>
+        <div class="btn">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="account.html">Account</a>
+        </div>
+
+        <!-- card- item page -->
+      </div>
+    </div>
+    <div class="cart-container">
+    
+    </div>
+    <script type="module" src="../JavaScript/shop.js"></script>
+  </body>
+</html>

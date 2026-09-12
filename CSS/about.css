@@ -1,0 +1,232 @@
+/* About page CSS */
+body{
+  color:#000;
+}
+
+.main-about-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 100vh;
+}
+.about-img-container {
+  width: 40%;
+}
+.about-img-container img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.about-img-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #000;
+  border-radius: 100px;
+}
+.about-text-container {
+  width: 350px;
+  height: 300px;
+  border: 3px solid #000;
+  border-radius: 40px;
+}
+.about-text-container h1,
+.about-text-container p {
+  color: #000;
+  text-align: center;
+  margin: 30px auto 0;
+}
+.about-text-container p {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.about-text-container:hover {
+  box-shadow: 4px 4px 30px #000;
+  transform: translateY(-3px);
+}
+.social-btn {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+.social-btn img {
+  width: 25;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.social-btn img:hover {
+  transform: translateY(-2px);
+}
+.insta:hover {
+  box-shadow: 4px 4px 25px rgb(174, 0, 145);
+}
+.tele:hover {
+  box-shadow: 4px 4px 25px rgb(0, 117, 189);
+}
+.twit:hover {
+  box-shadow: 4px 4px 25px black;
+}
+/* infinite scroll container */
+.infinite-scroll-container {
+  overflow: hidden;
+}
+
+.infinite-scroll-track,
+.infinite-scroll-track2,
+.infinite-scroll-track3 {
+  display: flex;
+  width: max-content;
+}
+
+.infinite-scroll-group,
+.infinite-scroll-group2,
+.infinite-scroll-group3 {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.infinite-scroll-track
+ {
+  animation: scroll-left 30s linear infinite;
+  
+}
+
+.infinite-scroll-track2 {
+  animation: scroll-right 18s linear infinite;
+}
+.infinite-scroll-track3{
+  animation: scroll-left 20s linear infinite;
+}
+.infinite-scroll-track:hover,
+.infinite-scroll-track2:hover,
+.infinite-scroll-track3:hover{
+  animation-play-state:paused;
+
+
+}
+
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+.infinite-scroll-item {
+  flex-shrink: 0;
+  width: 220px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-product-container,
+.about-product-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:120px;
+}
+.about-product-container{
+  margin-left:180px;
+}
+.about-product-container2{
+  flex-direction: row-reverse;
+  margin-right:170px;
+}
+
+.about-product,
+.about-product2 {
+  width: 300px;
+}
+.about-image,
+.about-image2 {
+  width: 400px;
+  height: 200px;
+}
+.about-image2{
+  margin-right:250px;
+}
+.about-image img,
+.about-image2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* card CSS */
+
+.card-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:3.5rem;
+  transition:.5s;
+
+
+}
+
+ .card-item:hover{
+    box-shadow:0 0 30px #000;
+    transform:translateY(-3px);
+  }
+.card-item{
+  width:250px;
+  height:350px;
+  border-radius:50px;
+  border:1px solid #000;
+  text-align:center;
+
+   
+}
+.card-image{
+  width:200px;
+  height:200px;
+  margin:25px;
+}
+.card-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:20px;
+}
+/* about ending css */
+
+.about-ending{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  flex-direction: column;
+}
+.about-ending h2{
+  margin:50px;
+}
+.about-ending-date{
+  display:flex;
+  justify-content:center;
+  gap:20rem;
+  align-items:center;
+  margin:80px 0;
+}

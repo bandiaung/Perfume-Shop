@@ -1,0 +1,83 @@
+body{
+  color:#fff;
+  background-image:url('../image/account-bg.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+}
+.login-container{
+  width:400px;
+  height:500px;
+  margin:80px auto;
+  border:1px solid #000;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  backdrop-filter:blur(30px);
+  border-radius:30px;
+}
+.login-items{
+  display:grid;
+  grid-template-columns: 1fr;
+}
+.login-items h1{
+  text-align:center;
+  text-transform:capitalize;
+}
+.login-items-group{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  font-size:12px;
+  margin:20px;
+  text-transform:capitalize;
+}
+.login-items-group a{
+  color:#000;
+  text-decoration:none;
+}
+.login-items-group a:hover{
+  color:#fff;
+}
+
+.login-items button{
+  width:100px;
+  height:40px;
+ margin-left:115px;
+ margin-top:20px;
+ border-radius:20px;
+ border:1px solid #002508;
+ background-color: #002508;
+ color:white;
+ text-transform:capitalize;
+}
+.login-items button:hover{
+  background-color: white;
+  box-shadow:0 0 30px #fff;
+  color:#002508;
+  border:none;
+}
+.login-items input{
+  width:300px;
+  height:40px;
+  margin:10px;
+  border-radius:8px;
+  border:1px solid #000;
+  outline:none;
+  padding:20px;
+  background:transparent;
+}
+.login-items input:hover{
+  border:1px solid #fff;
+  color:#fff;
+}
+
+.login-items input::placeholder{
+  color:#000;
+  transition:.5s;
+}
+.login-items input:hover::placeholder{
+  color:#fff;
+}
+
