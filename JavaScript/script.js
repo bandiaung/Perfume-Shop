@@ -26,7 +26,7 @@ function updateCartQuantity(){
    buyButtons.forEach((button) => {
   button.addEventListener("click", () => {
     
-    const productId = button.dataset.productId;
+  const productId = button.dataset.productId;
 
    addToCart(productId);
    updateCartQuantity();
